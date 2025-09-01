@@ -12,7 +12,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-1
+  name: pod-2
   labels:
     app-name: pod-demo
 spec:
