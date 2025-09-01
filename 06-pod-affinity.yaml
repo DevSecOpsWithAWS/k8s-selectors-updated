@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: "pod-1"
   labels:
-    app-name: pod-demo
+    app-name: pod-1
 spec:
   containers:
   - name: nginx
@@ -14,7 +14,7 @@ kind: Pod
 metadata:
   name: "pod-2"
   labels:
-    app-name: pod-demo
+    app-name: pod-2
 spec:
   affinity:
     podAffinity:
@@ -24,7 +24,8 @@ spec:
           - key: app-name
             operator: In
             values:
-            - pod-demo      
+            - pod-1   
+        topologyKey: "topology.kubernetes.io/zone"  
   containers:
   - name: nginx
     image: nginx
