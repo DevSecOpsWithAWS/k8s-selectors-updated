@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: Affinity-pod
+  name: affinity-pod
   labels:
     purpose: "Affinity-demo"
 spec:
